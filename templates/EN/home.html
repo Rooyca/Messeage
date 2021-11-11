@@ -1,0 +1,35 @@
+{% extends 'EN/layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+
+<div style="font-family: 'IBM Plex Mono', monospace; text-align: center; background-color: white; height:40px; font-size: 43px; text-shadow: 1px 1px #000, -1px 1px #000, -1px -1px #000, 1px -1px #000;
+    color:#fff;">Mes<span style="font-weight: 700; text-shadow: 1px 1px cyan, -1px 1px cyan, -1px -1px cyan, 1px -1px cyan; color:#fff;">SEA</span>ge</div>
+
+<br>
+<hr>
+<p style="padding: 25px; text-align:justify; font-size:13px">
+Have you ever thought about how lonely the Internet is? For me the expression "surfing the net" exemplifies in a masterful way our day to day life.<br><br>
+We <b>navigate</b> like messenger bottles, aimlessly, and although we often believe we are on dry land, this is just another illusion, an island of insignificant dimensions in the middle of nowhere.<br>
+<a href="{{url_for('info')}}" style="box-shadow:0px 0px 0px 0px">
+<span style="font-size: 10px; color: green; border-bottom: 1px solid gray; border-bottom-style: dashed; cursor: pointer;">More info...</span></a>
+</p>
+
+<div style="display:flex; justify-content: center;">
+	<a href="{{url_for('catch')}}" style="border-radius: 4px;box-shadow: rgba(0, 188, 221, 0.567) 0px -50px 36px -28px inset; padding: 7px;">Start</a>
+</div>
+
+<footer style="text-align: center; margin-top: 36px; font-size: 13px;">
+	<hr>
+	<div style="display: flex; justify-content: center;">
+		<a href="{{url_for('contact')}}" style="text-shadow: 3px 3px 2px salmon; box-shadow: 0px 0px 0px 0px; display: block;">Contact</a>
+
+	</div>
+	
+	&copy;2021 |<a href="https://github.com/Rooyca" style="text-shadow: 3px 3px 2px lightskyblue; box-shadow: 0px 0px 0px 0px;">Rooyca</a>
+
+</footer>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'ES/layout.html' %}
+
+{% block title %}Post{% endblock %}
+
+{% block body %}
+
+<a href="{{url_for('catch')}}" style="box-shadow: 0px 0px 0px 0px; position: absolute; right:79%; top:2%;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+</svg></a>
+
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         <h2 style="text-align:center;color: gray;text-shadow: 1px 1px 3px; font-size: 14px; margin-top:40px;margin-bottom: 0px">{{ message }}</h2>
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+
+<div class="area-post">
+	<form action="{{url_for('throw')}}" method="post">
+		<input type="text" name="title" style="font-family: 'Yomogi', cursive; background-color: transparent; border-style: none;margin-right: 20px;" placeholder="Titulo:" required>
+		<textarea name="note" rows="10" cols="20" style="font-family: 'Yomogi', cursive; background-color:transparent; border-style:none;" placeholder="Nota:" required></textarea>
+		<br>
+		<input style="margin-top: 10px; border-radius: 4px;box-shadow: rgba(0, 188, 221, 0.567) 0px -50px 36px -28px inset;" class="botones-botella" type="submit" name="submit" value="Enviar">
+	</form>
+</div>
+
+
+{% endblock %}
+

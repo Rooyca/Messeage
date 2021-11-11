@@ -1,0 +1,32 @@
+{% extends 'ES/layout.html' %}
+
+{% block title %}Info{% endblock %}
+
+{% block body %}
+
+<h1 style="text-align:center;">MesSEAge</h1>
+
+<p class="info-p">Es un juego de palabras que une <span style="font-style: italic;">Message</span> y <span style="font-style: italic;">Sea</span> haciendo referencia a los mensajes que, segun se dice, se enviaban en botellas de cristal a través del mar.
+</p>
+<p class="info-p">Aquí todos somos una persona "aislada" y, a la vez, una "aisladora", ¿que quiero decir con esto? Muy facil, la dinamica aquí es que todos estamos perdidos en islas diferentes y recibimos mensajes de personas que se encuentran en nuestra misma situacion. Nuestra "tarea" es leer dichos mensajes y dicidir si deseamos ayudarlos (presionando el icono del salvavidas) o regresarlos al mar (presionando el icono de la marea).</p>
+<p class="info-p">
+Puede que te estes preguntando, ¿y qué gano con eso? ¡NADA! Absolutamente nada, como dije al principio esto es una dinamica (un juego de rol, por decirlo de otra manera) y solo tiene sentido mientras sigamos el guion... Igual que en la vida real. 
+</p>
+
+<div style="margin:10px;">
+	<h4>Sobre mi</h4>
+	<p style="font-size:9px; text-align: justify;">Mi nombre es Ronald, aka rooyca. Tengo 23 años y vivo en Colombia. Mi objetivo con este pequeño proyecto era unir tres areas a las cuales les tengo muchísimo aprecio: la psicología, el lenguaje y la informática. Lo que buscaba con este "ensayo-pagina" era demostrar de una forma un tanto dramática la realidad a la que nos hemos acostumbrado y que hoy por hoy consideramos normal... Posiblemente me he quedado muy corto a lo hora de cumplir mi objetivo, pero al menos me gustaría pensar que te ha entrado la curiosidad y vas ha seguir profundizando en el tema.</p>
+</div>
+
+<footer style="text-align: center; margin-top: 36px; font-size: 13px;">
+	<hr>
+	<div style="display: flex; justify-content: center;">
+		<a href="{{url_for('contact')}}" style="text-shadow: 3px 3px 2px salmon; box-shadow: 0px 0px 0px 0px; display: block;">Contactar</a>
+
+	</div>
+	
+	&copy;2021 |<a href="https://github.com/Rooyca" style="text-shadow: 3px 3px 2px lightskyblue; box-shadow: 0px 0px 0px 0px;">Rooyca</a>
+
+</footer>
+
+{% endblock %}

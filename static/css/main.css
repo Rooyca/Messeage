@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Roboto+Mono:ital,wght@0,200;1,700&family=Yomogi&display=swap');
+
+* {
+	font-family: 'Roboto Mono', monospace;
+}
+nav {
+	text-align: center;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 8px;
+	padding: 4px;
+	box-shadow: 0.5px 0.5px 1px 0.2px gray;
+	border-radius: 5px;
+	color: black;
+}
+
+a:hover {
+	color: darkviolet;
+	transition: 500ms;
+	box-shadow: 2px 2px 4px violet;
+}
+
+
+
+.barra-de-botella {
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 18px;
+}
+
+.mensaje-botella {
+	box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);
+	margin-top: 5vw;
+	padding: 13px;
+	width: 280px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 10px;
+}
+
+.botones-botella {
+	border-style: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin:8px;
+}
+
+.area-post {
+	text-align: center;
+	width: 290px;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.info-p {
+	font-size:10px; 
+	margin: 10px;
+	text-align: justify;
+}
+
+
+
+@media screen and (min-width: 300px) {
+	.mensaje-botella {
+		margin-top: 6vw;
+	}
+	.area-post {
+		left: 50%;
+		top: 35%;
+		bottom: 25%;
+		transform: translate(-50%, -50%);
+	}
+	a {
+		font-size: 12px;
+	}
+}

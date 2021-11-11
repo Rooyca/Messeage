@@ -1,0 +1,30 @@
+{% extends 'ES/layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+<h1 style="text-align: center;">Contactar</h1>
+
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         <h2 style="text-align:center;color: gray;text-shadow: 1px 1px 3px">{{ message }}</h2>
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+
+{% from "ES/_formhelpers.html" import render_field %}
+<div>
+	<form method=post style="margin: 50px;">
+		  <dl>
+		    {{ render_field(form.username) }}
+		    {{ render_field(form.email) }}
+		    {{ render_field(form.message) }}
+		  </dl>
+		  <input type=submit value=Enviar style="margin-left:45%;border-radius: 4px; border-style:none;box-shadow: rgba(0, 188, 221, 0.567) 0px -50px 36px -28px inset; padding: 7px;">
+	</form>
+</div>
+
+
+{% endblock %}

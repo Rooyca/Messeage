@@ -1,0 +1,32 @@
+{% extends 'EN/layout.html' %}
+
+{% block title %}Info{% endblock %}
+
+{% block body %}
+
+<h1 style="text-align:center;">MesSEAge</h1>
+
+<p class="info-p">It is a play on words that joins Message and Sea in reference to the messages that, it is said, were sent in glass bottles across the sea.
+</p>
+<p class="info-p">Here we are all an "isolated" person and, at the same time, an "isolator", what do I mean by that? Very easy, the dynamic here is that we are all lost on different islands and we receive messages from people who are in the same situation as us. Our "task" is to read those messages and decide if we want to help them (by pressing the lifeguard icon) or return them to the sea (by pressing the tide icon).</p>
+<p class="info-p">
+You may be asking yourself, what's in it for me? NOTHING! Absolutely nothing, as I said at the beginning this is a dynamic (a role-playing game, to put it another way) and it only makes sense as long as we follow the script... Just like in real life.  
+</p>
+
+<div style="margin: 10px;">
+	<h4>About me</h4>
+	<p style="font-size:9px; text-align: justify;">My name is Ronald, aka rooyca. I am 23 years old and I live in Colombia. My goal with this little project was to unite three areas that I really like: psychology, linguistics and computer science. What I was looking for with this "essay-page" was to demonstrate in a somewhat dramatic way the reality to which we have become accustomed and that today we consider normal... I may have fallen short of my goal, but at least I would like to think that you have become curious and will continue to delve deeper into the subject.</p>
+</div>
+
+<footer style="text-align: center; margin-top: 36px; font-size: 13px;">
+	<hr>
+	<div style="display: flex; justify-content: center;">
+		<a href="{{url_for('contact')}}" style="text-shadow: 3px 3px 2px salmon; box-shadow: 0px 0px 0px 0px; display: block;">Contactar</a>
+
+	</div>
+	
+	&copy;2021 |<a href="https://github.com/Rooyca" style="text-shadow: 3px 3px 2px lightskyblue; box-shadow: 0px 0px 0px 0px;">Rooyca</a>
+
+</footer>
+
+{% endblock %}
